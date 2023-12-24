@@ -9,7 +9,7 @@ let contentText = `Heyyy Annu,
 
             मैं नही चाहता था तुम मेरे बुलाने से आओ ,
             मैं चाहता था तुम रह ना पाओ और बहाने से आओ।
-
+`
 
 const type = () => {
   let newContent = contentText.slice(0, index);
