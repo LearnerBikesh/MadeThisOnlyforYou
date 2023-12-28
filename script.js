@@ -5,10 +5,6 @@ let popUpEl = document.querySelector(".popup");
 const topEl = document.querySelector(".top");
 
 let contentText = `Heyyy Annu,
-           
-
-            मैं नही चाहता था तुम मेरे बुलाने से आओ ,
-            मैं चाहता था तुम रह ना पाओ और बहाने से आओ।
 `
 
 const type = () => {
