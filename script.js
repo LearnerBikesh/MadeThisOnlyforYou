@@ -65,12 +65,12 @@ let playme = setInterval(()=>{
       setTimeout(()=>{
         videoEL.src = ""
         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
-      }, 6000)
+      }, 40000)
       
-    } , 4000)
+    } , 20000)
     clearInterval(playme);
   }
-}, 6000)
+}, 2000)
 
 btnEl.addEventListener("click", () => {
   if (year !== 2024) {
