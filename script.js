@@ -3,7 +3,7 @@ let index = 1;
 let btnEl = document.querySelector(".btn");
 let popUpEl = document.querySelector(".popup");
 const topEl = document.querySelector(".top");
-
+const bodyEl = document.querySelector("body");
 let contentText = `Heyyy Annu,
 As the clock ticks towards a new year, my love for you deepens with each passing moment. In the tapestry(complexity) of time, our journey together is woven with threads of laughter, shared dreams, and the warmth of your presence by my side. As we stand on the cusp of a new beginning, I find myself grateful for the beautiful moments we've created and excited for the countless ones that lie ahead.
 
@@ -50,18 +50,27 @@ let d = new Date();
 let year = d.getFullYear();
 let date = d.getDate();
 // document.querySelector(".video").style.display = 'none';
+
+const videoEL = document.querySelector(".video");
 let playme = setInterval(()=>{
-  const videoEL = document.querySelector(".video");
-  if(date === 28){
+  
+  const audioEl = document.querySelector("audio");
+  if(date === 1){
+    bodyEl.style.backgroundImage = 'none';
+    videoEL.src = "fireworks.mp4";
     videoEL.style.display = "block";
     videoEL.style.zIndex = "-1";
     setTimeout(()=>{
-      videoEL.style.display = "none";
-      videoEL.sytle.zIndex = "-5";
-    } , 60000)
+      videoEL.src = "newYear.mp4";
+      setTimeout(()=>{
+        videoEL.src = ""
+        bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
+      }, 6000)
+      
+    } , 6000)
     clearInterval(playme);
   }
-}, 3000)
+}, 6000)
 
 btnEl.addEventListener("click", () => {
   if (year !== 2024) {
