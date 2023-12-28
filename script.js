@@ -67,7 +67,7 @@ let playme = setInterval(()=>{
         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
       }, 6000)
       
-    } , 6000)
+    } , 4000)
     clearInterval(playme);
   }
 }, 6000)
