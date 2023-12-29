@@ -63,7 +63,11 @@ let playme = setInterval(()=>{
       videoEL.src = "newYear.mp4";
       setTimeout(()=>{
         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
+<<<<<<< HEAD
       }, 20000)
+=======
+      }, 40000)
+>>>>>>> 034d9c21ed6a10660e4aa7ed5065eac915cd4b28
       
     } , 20000)
     clearInterval(playme);
