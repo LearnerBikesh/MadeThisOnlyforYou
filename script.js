@@ -56,21 +56,19 @@ let playme = setInterval(()=>{
   
   const audioEl = document.querySelector("audio");
   if(date === 1){
-    bodyEl.style.backgroundImage = 'none';
     videoEL.src = "fireworks.mp4";
     videoEL.style.display = "block";
     videoEL.style.zIndex = "-1";
     setTimeout(()=>{
       videoEL.src = "newYear.mp4";
       setTimeout(()=>{
-        videoEL.src = ""
         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
-      }, 6000)
+      }, 20000)
       
-    } , 6000)
+    } , 20000)
     clearInterval(playme);
   }
-}, 6000)
+}, 2000)
 
 btnEl.addEventListener("click", () => {
   if (year !== 2024) {

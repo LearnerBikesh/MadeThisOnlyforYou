@@ -12,12 +12,13 @@ html{
 }
 body{
     background: url(element5-digital-MEzqoN8p6C0-unsplash.jpg);
-    background-size: cover;
-    background-position: left;
+    background-size: fill;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,21 +29,13 @@ body{
     top: 0;
     bottom: 0;
    z-index: -1;
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+   object-position: center;
 }
 
-@media (min-aspect-ratio: 16/9){
-    .video{
-        width: 100%;
-        height: auto;
-    }
-}
 
-@media (max-aspect-ratio: 16/9){
-    .video{
-        width: auto;
-        height: 100%;
-    }
-}
 
 .main-div{
     height: 100vh;
