@@ -52,21 +52,6 @@ let date = d.getDate();
 // document.querySelector(".video").style.display = 'none';
 
 const videoEL = document.querySelector(".video");
-// let playme = setInterval(()=>{
-
-//   const audioEl = document.querySelector("audio");
-//   if(date === 1){
-//     videoEL.src = "fireworks.mp4";
-//     videoEL.style.display = "block";
-//     videoEL.style.zIndex = "-1";
-//     setTimeout(()=>{
-//       videoEL.src = "newYear.mp4";
-//       setTimeout(()=>{
-//         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
-//       } , 20000)
-//     } , 20000)
-//     clearInterval(playme);
-//   } , 2000);
 
 let playme = setInterval(() => {
   const audioEl = document.querySelector("audio");
@@ -76,11 +61,10 @@ let playme = setInterval(() => {
     videoEL.style.zIndex = "-1";
     setTimeout(() => {
       videoEL.src = "newYear.mp4";
-      setTimeout(() => {
-        bodyEl.style.backgroundImage =
-          "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
-      }, 20000);
-    }, 20000);
+      setTimeout(()=>{
+        bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
+      }, 40000)
+    } , 20000)
     clearInterval(playme);
   }
 }, 2000);
