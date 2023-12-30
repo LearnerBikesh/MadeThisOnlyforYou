@@ -52,27 +52,38 @@ let date = d.getDate();
 // document.querySelector(".video").style.display = 'none';
 
 const videoEL = document.querySelector(".video");
-let playme = setInterval(()=>{
-  
+// let playme = setInterval(()=>{
+
+//   const audioEl = document.querySelector("audio");
+//   if(date === 1){
+//     videoEL.src = "fireworks.mp4";
+//     videoEL.style.display = "block";
+//     videoEL.style.zIndex = "-1";
+//     setTimeout(()=>{
+//       videoEL.src = "newYear.mp4";
+//       setTimeout(()=>{
+//         bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
+//       } , 20000)
+//     } , 20000)
+//     clearInterval(playme);
+//   } , 2000);
+
+let playme = setInterval(() => {
   const audioEl = document.querySelector("audio");
-  if(date === 1){
+  if (date === 1) {
     videoEL.src = "fireworks.mp4";
     videoEL.style.display = "block";
     videoEL.style.zIndex = "-1";
-    setTimeout(()=>{
+    setTimeout(() => {
       videoEL.src = "newYear.mp4";
-      setTimeout(()=>{
-        bodyEl.style.backgroundImage = "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
-<<<<<<< HEAD
-      }, 20000)
-=======
-      }, 40000)
->>>>>>> 034d9c21ed6a10660e4aa7ed5065eac915cd4b28
-      
-    } , 20000)
+      setTimeout(() => {
+        bodyEl.style.backgroundImage =
+          "url('alexander-grey-J3m69BAg30s-unsplash.jpg')";
+      }, 20000);
+    }, 20000);
     clearInterval(playme);
   }
-}, 2000)
+}, 2000);
 
 btnEl.addEventListener("click", () => {
   if (year !== 2024) {
